@@ -1,4 +1,4 @@
-# Python-project.
+# Python-project. Learn new language.
  Learn foreign language or whatever you want with flash card program. 
 
 This program let you learn new words from foreign language. In this case it is English to French. 
