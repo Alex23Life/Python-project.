@@ -7,9 +7,9 @@ to_learn = {}
 current_card = {}
 
 try:
-    data = pd.read_csv('data/words_to_learn.csv')
+    data = pd.read_csv('words_to_learn.csv')
 except FileNotFoundError:
-    original_data = pd.read_csv('data/french_words.csv')
+    original_data = pd.read_csv('french_words.csv')
     to_learn = original_data.to_dict(orient="records")
 else:
     to_learn = data.to_dict(orient="records")
@@ -44,22 +44,22 @@ def repeat_card():
 def is_known():
     to_learn.remove(current_card)
     data = pd.DataFrame(to_learn)
-    data.to_csv('data/words_to_learn.csv', index=False)
+    data.to_csv('words_to_learn.csv', index=False)
     next_card()
 
 
 # WINDOW
 window = Tk()
-window.title("")
+window.title("Learn foreign language")
 window.config(pady=50, padx=50, bg=BACKGROUND_COLOR)
 window_flip_timer = window.after(3000, func=next_card)
 
 # IMAGES
-wrong_icon = PhotoImage(file="images/wrong.png")
-right_icon = PhotoImage(file="images/right.png")
-repeat_icon = PhotoImage(file="images/repeat.png")
-front_card = PhotoImage(file="images/card_front.png")
-back_card = PhotoImage(file="images/card_back.png")
+wrong_icon = PhotoImage(file="wrong.png")
+right_icon = PhotoImage(file="right.png")
+repeat_icon = PhotoImage(file="repeat.png")
+front_card = PhotoImage(file="card_front.png")
+back_card = PhotoImage(file="card_back.png")
 
 # CANVAS
 canvas = Canvas(width=800, height=526, highlightthickness=0, bg=BACKGROUND_COLOR)
