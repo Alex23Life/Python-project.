@@ -5,6 +5,9 @@ This program let you learn new words from foreign language. In this case it is E
 Click left button to skip word and show another one. If you would like to see translation again click button in the middle.
 And if you are sure you have learned the word, press button on the rignt to show new word and remove from list old one (the old word will no longer appear).
 
+If you would like to learn another language, so here is link for wiki website with Frequency lists where I got words for this program https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists
+Use csv file.
+
 Short description of the content of the program.
 For User interface was used tkinter package.
 For work with data was used pandas packege.
