@@ -1,7 +1,7 @@
 # Python-project.
- Learn foreign language or whatever you want with flash card program.
+ Learn foreign language or whatever you want with flash card program. 
 
-This program let you learn new words from foreign language. In this case it is English to French. But it could be whatever you want. 
+This program let you learn new words from foreign language. In this case it is English to French. 
 Click left button to skip word and show another one. If you would like to see translation again click button in the middle.
 And if you are sure you have learned the word, press button on the rignt to show new word and remove from list old one (the old word will no longer appear).
 
@@ -31,7 +31,7 @@ Description how to create my programm:
 Vizualization part:
 -Create window( use Tk()) and customize it with pady, padx attributes ( use config() give space bettween frameworks and canvas). 
 Use window.mainloop() to prevent disappearance of window as we run the program.
--Extract images from folder "images"(obviously😅) using PhotoImage() function.
+-Extract images from folder using PhotoImage() function.
 -Create canvas( use Canvas() ) and customize it with width, height, highlightthickness, bg attributes.
 Make background image ( create_image() ), create text on it( create_text() ), place it ( grid() ).
 -Create buttons ( Button() ) using images that we extracted ( wrong.png, right.png and so on). 
